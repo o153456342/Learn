@@ -1,4 +1,154 @@
+#define  _CRT_SECURE_NO_WARNINGS 1
+
 #include <stdio.h>
+
+int main()
+{
+	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+	int* p = arr;
+	int sz = sizeof(arr) / sizeof(arr[0]);
+	int i = 0;
+	for (i = 0; i < sz; i++)
+	{
+		printf("%d ", *(p + i));
+	}
+}
+
+//int main()
+//{
+//	char str1[] = "abc";
+//	char str2[] = "abc";
+//	const char str3[] = "abc";
+//	const char str4[] = "abc";
+//	char* str5 = "abc";
+//	char* str6 = "abc";
+//	const char* str7 = "abc";
+//	const char* str8 = "abc";
+//
+//	str5 += 1;
+//	str6 += 1;
+//	str7 += 1;
+//	str8 += 1;
+//
+//	printf("str1=%d\n", str1);
+//	printf("str2=%d\n", str2);
+//	printf("str3=%d\n", str3);
+//	printf("str4=%d\n", str4);
+//	printf("str5=%d\n", str5);
+//	printf("str6=%d\n", str6);
+//	printf("str7=%d\n", str7);
+//	printf("str8=%d\n", str8);
+//}
+
+//void print(int m)
+//{
+//	int i = 0;
+//	for (i = 30; i >= 0; i -= 2)
+//	{
+//		printf("%d ", ((m >> i) & 1));
+//	}
+//	printf("\n");
+//	for (i = 31; i >= 1; i -= 2)
+//	{
+//		printf("%d ", ((m >> i) & 1));
+//	}
+//}
+//
+//int main()
+//{
+//	int m = 0;
+//	scanf("%d", &m);
+//	print(m);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int m = 1999;
+//	int n = 2299;
+//	int x = 0;
+//	int i = 0;
+//	int count = 0;
+//	x = m ^ n;
+//	//方法二
+//	for (i = 0; i < 32; i++)
+//	{
+//		if (((x >> i) & 1) == 1)
+//			count++;
+//	}
+//	printf("%d", count);
+//	//方法一
+//	//while (x != 0)
+//	//{
+//	//	x = x & (x - 1);
+//	//	i++;
+//	//}
+//	//printf("%d", i);
+//
+//	return 0;
+//}
+
+//void print(int arr[], int sz)
+//{
+//	int i = 0;
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	printf("\n");
+//}
+//
+//int main()
+//{
+//	int arr1[] = { 1,2,3,4,5 };
+//	int arr2[] = { 6,7,8,9,10 };
+//	int sz = sizeof(arr1)/sizeof(arr1[0]);
+//	int* pa = arr1;
+//	int* pb = arr2;
+//	int* tmp = NULL;
+//	tmp = pa;
+//	pa = pb;
+//	pb = tmp;
+//	print(arr1, sz);
+//	print(arr2, sz);
+//
+//}
+
+//void reverse(int arr[], int sz)
+//{
+//	int i = 0;
+//	int tmp = 0;
+//	for (i = 0; i < sz-1-i; i++)
+//	{
+//		tmp = arr[sz - 1- i];
+//		arr[sz -1- i] = arr[i];
+//		arr[i] = tmp;
+//
+//	}
+//}
+//
+
+//
+//void init(int arr[],int sz)
+//{
+//	int i = 0;
+//	for (i = 0; i < sz; i++)
+//	{
+//		arr[i] = 0;
+//	}
+//}
+//
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	//init(arr,sz);
+//	//print(arr,sz);
+//	reverse(arr,sz);
+//	print(arr, sz);
+//
+//	return 0;
+//}
 
 //int main()
 //{
