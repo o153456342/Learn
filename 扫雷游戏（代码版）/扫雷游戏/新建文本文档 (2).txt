@@ -1,0 +1,18 @@
+			if (board[i][j] >= 0 && board[i][j] <= 8)
+			{
+				putimage(j  * SIZE, i * SIZE, &img[board[i][j]);
+			}
+			if (board[i][j] == '#')//雷
+			{
+				putimage(j * SIZE, i * SIZE, &img[11]);
+			}
+			if (board[i][j] >= 19 && board[i][j] <= 28)
+			{
+				putimage(j * SIZE, i * SIZE, &img[]);
+			}
+			if (board[i][j] >= 0 && board[i][j] <= 8)
+			{
+				putimage(j * SIZE, i * SIZE, &img[]);
+			}
+
+	initgraph(COL * SIZE, ROW * SIZE, SHOWCONSOLE);
