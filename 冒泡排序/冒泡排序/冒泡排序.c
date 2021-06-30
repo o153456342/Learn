@@ -7,7 +7,7 @@ void bubble_sort(int arr[], int sz)
 	for (i = 0; i < sz; i++)
 	{
 		int flag = 1;
-		for (j = 1; j < sz - 1 - i; j++)
+		for (j = 1; j < sz - i; j++)
 		{
 			if (arr[j] > arr[j - 1])
 			{
@@ -18,13 +18,16 @@ void bubble_sort(int arr[], int sz)
 			}
 		}
 		if (flag == 1)
+		{
 			break;
+		}
+
 	}
 }
 
 int main()
 {
-	int arr[] = { 9,8,7,6,5,4,3,2,1,0 };
+	int arr[] = {0,1,2};
 	int i = 0;
 	int sz = sizeof(arr) / sizeof(arr[0]);
 	bubble_sort(arr, sz);
